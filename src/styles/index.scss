@@ -10,12 +10,14 @@
 
 body {
 position: relative;
-font-family: 'Montserrat', sans-serif
+font-family: 'Montserrat', sans-serif;
+background: var(#{--body-background-default});
+
 };
 
 .container {
     min-width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding: 20px;
 }
 

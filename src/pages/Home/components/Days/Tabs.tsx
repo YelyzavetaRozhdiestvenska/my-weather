@@ -12,13 +12,13 @@ export type Tab = {
 export const Tabs = (props: Props) => {
     const tabs: Tab[] = [
         {
-      value: 'На неделю',
+      value: 'На тиждень',
     },
     {
-      value: 'На 10 дней',
+      value: 'На 10 діб',
     },
     {
-      value: 'На месяц',
+      value: 'На місяць',
     },
     ]
 

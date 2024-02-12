@@ -15,7 +15,7 @@ export const ThisDayItem = ({ item }: Props) => {
         <IndicatorSvgSelector key={item.icon_id} id={icon_id} />
       </div>
       <div className={s.indicator__name}>{name}</div>
-      <div className={s.indicator__value}>{value}</div>
+      <div className={s.indicator__value}>:  {value}</div>
     </div>
   )
 }

@@ -41,10 +41,10 @@ export const Popup = ({}: Props) => {
             <GlobalSvgSelector id="sun" />
           </div>
           <div className={s.day_time}>
-            Время: <span>21:54</span>
+            Час: <span>21:54</span>
           </div>
           <div className={s.day_city}>
-            Время: <span>Київ</span>
+            Місто: <span>Київ</span>
           </div>
         </div>
           <div className={s.this_day_info_items}>
