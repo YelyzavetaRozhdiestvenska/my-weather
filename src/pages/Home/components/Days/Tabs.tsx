@@ -25,7 +25,7 @@ export const Tabs = (props: Props) => {
     return (
         <div className={s.tabs}>
             <div className={s.tabs_wrapper}>
-            {tabs.map((tab) => (<div className={s.tab} key={tab.value}>{tab.value}</div>))}
+            {tabs.map((tab) => (<div className={s.tab + ' ' + s.activ} key={tab.value}>{tab.value}</div>))}
             </div> 
             <div className={s.cancel}>Отменить</div>
         </div>
