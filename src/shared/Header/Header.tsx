@@ -41,10 +41,7 @@ const options = [
     theme.changeTheme(theme.theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)
     
 }
-
-  
-
-    
+   
   
   return (
       <header className={s.header}>

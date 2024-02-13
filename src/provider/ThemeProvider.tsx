@@ -12,6 +12,7 @@ type Props = {
 export const ThemeProvider = ({ children, ...props }: Props) => {
     const [theme, setTheme] = useState<Theme>(storage.getItem('theme') || Theme.LIGHT);
 
+    changeCssRootVariables(theme);
     function changeTheme(theme: Theme) {
         storage.setItem('theme', theme);
         setTheme(theme);
