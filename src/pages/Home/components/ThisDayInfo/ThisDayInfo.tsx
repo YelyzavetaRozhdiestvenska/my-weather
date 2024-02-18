@@ -23,17 +23,17 @@ export const ThisDayInfo = (props: Props) => {
     },
     {
       icon_id: 'pressure',
-      name: 'Давление',
+      name: 'Тиск',
       value: '765 мм ртутного столба - нормальное',
     },
     {
       icon_id: 'precipitation',
-      name: 'Осадки',
+      name: 'Опади',
       value: 'Без осадков',
     },
     {
       icon_id: 'wind',
-      name: 'Ветер',
+      name: 'Вітер',
       value: '3 м/с юго-запад - легкий ветер',
     },
     ];

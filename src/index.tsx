@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/index.scss'
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import { ThemeProvider } from './provider/ThemeProvider';
 import { Provider } from 'react-redux';
 import {store} from './store/store'
@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <Router>
+    <BrowserRouter basename="my-weather">
       <ThemeProvider>
         <App />
       </ThemeProvider>
-      </Router>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );

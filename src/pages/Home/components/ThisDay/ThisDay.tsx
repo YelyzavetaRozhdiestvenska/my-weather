@@ -20,8 +20,8 @@ export const ThisDay = ({weather}: Props) => {
                 <GlobalSvgSelector id="sun"/>
             </div>
             <div className={s.bottom_block}>
-                <div className={s.this_time}>Час: <span>21;54</span></div>
-                <div className={s.this_city}>Місто: <span>Київ</span></div>
+                {/* <div className={s.this_time}>Час: <span>21:54</span></div> */}
+                <div className={s.this_city}>Місто: <span>{weather.name}</span></div>
             </div>
         </div>
     );

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import {useEffect} from 'react'
 import s from './Home.module.scss'
 import { ThisDay } from './components/ThisDay/ThisDay'
 import { ThisDayInfo } from './components/ThisDayInfo/ThisDayInfo'
@@ -17,8 +17,8 @@ export const Home = (props: Props) => {
   const { weather } = useCustomSelector(selectCurrentWeatherData);
 
   useEffect(() => {
-    dispatch(fetchCurrentWeather('paris'));
-  }, []);
+    dispatch(fetchCurrentWeather('Дессау'));
+  }, [dispatch] );
 
   return (
     <div className={s.home}>
@@ -26,8 +26,8 @@ export const Home = (props: Props) => {
         <ThisDay weather={weather} />
         <ThisDayInfo />
       </div>
-      <Days/>
+      <Days />
       
     </div>
-  )
-}
+  );
+};
